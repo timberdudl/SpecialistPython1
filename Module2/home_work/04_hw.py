@@ -14,3 +14,12 @@
 #    #
 #    #
 ######
+
+
+square_side = int(input('a= '))
+print('#' * square_side)
+a = 0
+while a < square_side - 2:
+    print('#' + ' ' * (square_side - 2) + '#')
+    a += 1
+print ('#' * square_side)
