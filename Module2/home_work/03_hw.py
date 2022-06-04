@@ -31,3 +31,12 @@
 # 20 199.8 Rub.
 
 # TODO: your code here
+
+
+price = float(input('цена: '))
+quantity = 0
+amount = 0
+while quantity < 20:
+    amount += price
+    quantity += 1
+    print(quantity, round(amount, 2))
