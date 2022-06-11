@@ -22,7 +22,17 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+pyramid_height = int(input('задайте высоту:'))
+current_floor = 1
+current_position = 1
+while current_floor <= pyramid_height:
+    while current_position <= current_floor:
+        print(current_position, end='')
+        current_position += 1
+    current_position = 1
+    current_floor += 1
+    print()
+
 ```
 
 ---
