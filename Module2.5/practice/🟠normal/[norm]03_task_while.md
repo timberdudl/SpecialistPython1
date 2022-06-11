@@ -20,7 +20,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+pyramid_height = int(input('задайте высоту:'))
+corent_height = 1
+brick_counter = 0
+while corent_height <= pyramid_height:
+    brick_counter += corent_height
+    corent_height += 1
+print(brick_counter)
 ```
 
 ---
