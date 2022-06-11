@@ -16,7 +16,20 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+serial_number = int(input('введите номер:'))
+count = 0
+feb_desired = 0
+feb_previous = 1
+feb_pre_previous = 0
+if serial_number == 2:
+    print(1)
+else:
+    while count < serial_number - 2:
+        feb_desired = feb_previous + feb_pre_previous
+        feb_pre_previous = feb_previous
+        feb_previous = feb_desired
+        count += 1
+    print(feb_desired)
 ```
 
 ### Данные для самопроверки
