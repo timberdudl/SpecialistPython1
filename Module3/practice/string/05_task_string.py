@@ -4,5 +4,16 @@
 
 # Пример строки перевертыша: "И темен город. Мороз узором дорог не мети."
 
-# TODO: your code here
+text = input('Введите строку: ')
+spaces_and_punctuation_free_text = text.replace(' ', '').replace(',', '').replace('.', '').lower()
+j = -1
+counter = 0
+for i in range(len(spaces_and_punctuation_free_text)):
+    if spaces_and_punctuation_free_text[i] == spaces_and_punctuation_free_text[j]:
+        counter += 1
+    j -= 1
+if counter == len(spaces_and_punctuation_free_text):
+    print('перевертыш')
+else:
+    print('не перевертыш')
 
